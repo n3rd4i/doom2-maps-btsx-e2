@@ -2,13 +2,13 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . "$toolsDir\commonEnv.ps1"
 
-$url        = 'http://static.angryscience.net/doom/btsx_e2_b1.zip'
+$url        = 'http://esselfortium.net/wasd/btsx_e2_b3.zip'
 $unzipLocation = "$(Join-Path $toolsDir wad)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $unzipLocation
   url           = $url
-  checksum      = '4431E3D377E526D7580322072F0E7D37273770BDE398FD2F036A0068B0D93A95'
+  checksum      = '2954E0E9E18F56BD54A46CFE897DA32FD8B052E92805575A52896E0FBD39C284'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
